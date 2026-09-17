@@ -165,9 +165,31 @@ h1, h2 { line-height: 1.4; }
 }
 .site-footer p { margin: 18px 0 0; }
 
+/* Legal pages share the existing site header while keeping the document surface white. */
+body:has(.legal-page) { background: #fff; }
+body:has(.legal-page) .site-header { background: #fff; }
+body:has(.legal-page) .brand { gap: 8px; font-size: 1.05rem; }
+body:has(.legal-page) .brand-mark {
+  width: 32px;
+  height: 32px;
+  background: url('/baby-face.png') center / contain no-repeat;
+  font-size: 0;
+}
+body:has(.legal-page) .brand::after {
+  content: '育児用品のストック・在庫管理';
+  padding-left: 10px;
+  border-left: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: .75rem;
+  font-weight: 500;
+  white-space: normal;
+}
+body:has(.legal-page) .legal-page { background: #fff; }
+
 @media (max-width: 680px) {
   .header-inner { min-height: 62px; }
   .header-nav { display: none; }
+  body:has(.legal-page) .brand::after { display: none; }
   .page-shell { padding: 40px 0 64px; }
   .hero { padding: 38px 20px; }
   .hero-icon { width: 72px; height: 72px; font-size: 2.8rem; }
