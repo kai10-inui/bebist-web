@@ -1,15 +1,4 @@
 {
   "version": 1,
-  "items": [
-    {
-      "id": "test-20260930",
-      "title": "【テスト】お知らせ表示の確認",
-      "body": "これは表示確認用のお知らせです。公開前に削除します。",
-      "publishedAt": "2026-09-30T23:02:41+09:00",
-      "enabled": true,
-      "priority": "normal",
-      "minBuild": 12,
-      "link": null
-    }
-  ]
+  "items": []
 }
