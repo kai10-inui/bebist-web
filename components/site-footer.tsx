@@ -8,7 +8,7 @@ export function SiteFooter() {
         <Link href="/terms">利用規約</Link>
         <Link href="/contact">お問い合わせ</Link>
       </nav>
-      <p>べびストはアフィリエイト広告（Amazonアソシエイト含む）を掲載しています。</p>
+      <p>べびストはアフィリエイト広告を掲載しています。</p>
       <p>© {new Date().getFullYear()} べびスト</p>
     </footer>
   );
